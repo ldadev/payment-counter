@@ -1,3 +1,8 @@
+
+
+
+
+
 const months = [
     'Enero',
     'Febrero',
@@ -53,6 +58,7 @@ const months = [
   const futureTime = futureDate.getTime();
  
   function getRemaindingTime() {
+
     const today = new Date().getTime();
     const t = futureTime - today;
 
@@ -91,10 +97,16 @@ const months = [
       clearInterval(countdown);
       deadline.innerHTML = `<h4 class="expired">sorry, this giveaway has expired!</h4>`;
     }
-  
+
+    const audio = document.createElement("audio");
+    audio.muted = true;
   }
   // countdown;
   let countdown = setInterval(getRemaindingTime, 1000);
   //set initial values
   getRemaindingTime();
-  
+
+
+
+
+ 
