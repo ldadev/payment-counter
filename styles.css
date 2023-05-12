@@ -235,4 +235,32 @@ Countdown Timer
   letter-spacing: var(--spacing);
 }
 
+@media screen and (min-width: 328px) {
+  video{
+    width: 300px;
+    height: 200px;
+  }
+}
 
+@media screen and (min-width: 360px) {
+  video{
+    width: 320px;
+    height: 200px;
+  }
+}
+
+
+@media screen and (min-width: 532px) {
+  video{
+    width: 400px;
+    height: 200px;
+  }
+}
+
+
+@media screen and (min-width: 412px) {
+  video{
+    width: 350px;
+    height: 200px;
+  }
+}
