@@ -264,3 +264,11 @@ Countdown Timer
     height: 200px;
   }
 }
+
+@media screen and (min-width: 1580px) {
+  video{
+    width: 500px;
+    height: 350px;
+  }
+}
+
