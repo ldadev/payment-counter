@@ -34,7 +34,7 @@ const months = [
 
   console.log(change_days)
   // months are ZERO index based;
-  const futureDate = new Date(tempYear, tempMonth, 20, 11, 30, 0);
+  const futureDate = new Date(tempYear, tempMonth, 19, 11, 30, 0);
 
 
   // let futureDate = new Date(2020, 3, 24, 11, 30, 0);
@@ -75,7 +75,7 @@ const months = [
 
   
     // set values array
-    const values = [days, hours, minutes, seconds];
+    const values = [days + 2, hours, minutes, seconds];
     function format(item) {
       if (item < 10) {
         return (item = `0${item}`);
