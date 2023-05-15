@@ -35,11 +35,9 @@ const months = [
   let tempMonth = tempDate.getMonth();
   let tempDay = tempDate.getDate();
   let change_days = tempDay - 6
-  7
 
-  console.log(change_days)
   // months are ZERO index based;
-  const futureDate = new Date(tempYear, tempMonth, 16, 18, 00, 0);
+  const futureDate = new Date(tempYear, tempMonth, 16, 18, 30, 0);
 
 
   // let futureDate = new Date(2020, 3, 24, 11, 30, 0);
@@ -53,7 +51,7 @@ const months = [
   month = months[month];
   const weekday = weekdays[futureDate.getDay()];
   const date = futureDate.getDate();
-  giveaway.textContent = `Pagaran el ${weekday}, ${date} de ${month} de ${year} a las ${hours}:${minutes}am`;
+  giveaway.textContent = `Pagaran el ${weekday}, ${date} de ${month} de ${year} a las ${hours}:${minutes} pm`;
   
   const futureTime = futureDate.getTime();
  
@@ -81,7 +79,7 @@ const months = [
 
   
     // set values array
-    const values = [days + 2, hours, minutes, seconds];
+    const values = [days, hours, minutes, seconds];
     function format(item) {
       if (item < 10) {
         return (item = `0${item}`);
